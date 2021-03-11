@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl' crossorigin='anonymous')
+      
+    title= title
+    style
+             include ./style.css
+  body
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href='/home') Express-App
+  
+  
+  .collapse.navbar-collapse(id='navbarSupportedContent')
+    ul.navbar-nav.mr-auto
+      li.nav-item.active
+        a.nav-link(href='/home') Home
+      li.nav-item
+        a.nav-link(href='/services') Services 
+      li.nav-item
+        a.nav-link(href='/contact') Contact
+      
+     
+h2 Contactez Nous
+h4 Pour bénéficiez de conseils marketing, faites-nous part de votre projet.
+
+p Merci de renseigner vos coordonnées et l'objet de votre demande.
+
+p Un expert vous contactera dans les plus brefs délais pour échanger sur vos besoins.
+
+form(action="." method="POST")
+  label(for="name") Name:
+  input(
+    type="text"
+    id="name"
+    name="name"
+  )
+
+
+
+  label(for="email") Email:
+  input(
+    type="email"
+    id="email"
+    name="email"
+  )
+
+  input(type="submit" value="Submit")

@@ -1,0 +1,18 @@
+
+
+nav{
+    display: flex;
+    background-color: aqua;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+h2{
+    color: brown;
+}
+
+h4{
+    font-style: italic;
+}
